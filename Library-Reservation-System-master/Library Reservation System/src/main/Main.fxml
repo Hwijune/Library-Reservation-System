@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="627.0" prefWidth="987.0" style="-fx-background-color: #ffffffcc; -fx-border-width: 3; -fx-border-color: coral;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="main.MainController">
+   <children>
+      <Label disable="true" layoutX="7.0" layoutY="6.0" prefHeight="46.0" prefWidth="976.0" style="-fx-background-color: pink;" />
+      <Circle fill="#fa4771" layoutX="955.0" layoutY="27.0" radius="13.0" stroke="#fa4771" strokeType="INSIDE" />
+      <Label layoutX="518.0" layoutY="20.0" fx:id="userName">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="707.0" layoutY="12.0" prefHeight="30.0" prefWidth="87.0" style="-fx-border-color: black; -fx-border-radius: 15;" text="     My Page" textAlignment="CENTER" />
+      <Label layoutX="794.0" layoutY="12.0" prefHeight="30.0" prefWidth="87.0" style="-fx-border-color: black; -fx-border-radius: 15;" text="      Log out" textAlignment="CENTER" />
+      <Label layoutX="26.0" layoutY="14.0" prefHeight="29.0" prefWidth="179.0" text="도서관 이용 도우미">
+         <font>
+            <Font name="배달의민족 주아" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="image1" fitHeight="233.0" fitWidth="342.0" layoutX="7.0" layoutY="52.0" pickOnBounds="true">
+         <image>
+            <Image url="img/11.JPG" /> <!-- 도서 대출 시스템 -->
+         </image>
+      </ImageView>
+      <ImageView fx:id="image2" fitHeight="295.0" fitWidth="364.0" layoutX="349.0" layoutY="52.0" pickOnBounds="true">
+         <image>
+            <Image url="img/22.JPG" /> <!-- 열람실 예약 시스템 -->
+         </image>
+      </ImageView>
+      <ImageView fx:id="image3" fitHeight="295.0" fitWidth="270.0" layoutX="713.0" layoutY="52.0" pickOnBounds="true">
+         <image>
+            <Image url="img/333.JPG" />  <!-- 이달의 새 책 시스템 -->
+         </image>
+      </ImageView>
+      <ImageView fx:id="image4" fitHeight="338.0" fitWidth="342.0" layoutX="7.0" layoutY="283.0" pickOnBounds="true">
+         <image>
+            <Image url="img/44.JPG" /> <!-- 도서 대출 현황 -->
+         </image>
+      </ImageView>
+      <ImageView fx:id="image5" fitHeight="276.0" fitWidth="631.0" layoutX="349.0" layoutY="346.0" pickOnBounds="true">
+         <image>
+            <Image url="img/55.JPG" /> <!-- 도서 위치 추적 -->
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="732.0" prefWidth="1111.0" style="-fx-background-color: #FF9999;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="t.rootcontroller">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="5.0" prefHeight="719.0" prefWidth="1099.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="802.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../untitled%5B1%5D.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn" layoutX="848.0" layoutY="597.0" mnemonicParsing="false" text="대출" />
+            <TextField fx:id="searchtext" layoutX="265.0" layoutY="116.0" prefHeight="50.0" prefWidth="402.0" promptText="검색할 도서를 입력하세요." />
+            <Button fx:id="loadbtn" layoutX="667.0" layoutY="116.0" mnemonicParsing="false" text="검색" />
+            <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="60.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../online_school_search_book-128%5B1%5D.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tablebook" layoutX="20.0" layoutY="183.0" onMouseClicked="#ClickItem" prefHeight="516.0" prefWidth="678.0" style="-fx-background-color: lightgray;">
+              <columns>
+                  <TableColumn fx:id="columnnum" prefWidth="75.0" text="번호" />
+                <TableColumn fx:id="columnauthor" prefWidth="146.0" text="청구 기호" />
+                  <TableColumn fx:id="columnstatus" prefWidth="105.0" text="도서 열람실" />
+                  <TableColumn fx:id="t5" prefWidth="75.0" text="책 이름" />
+                  <TableColumn fx:id="t6" prefWidth="75.0" text="저자" />
+                  <TableColumn fx:id="t7" prefWidth="75.0" text="출판사" />
+                <TableColumn fx:id="columnname" prefWidth="109.0" text="출판 년도" />
+              </columns>
+               <opaqueInsets>
+                  <Insets top="1.0" />
+               </opaqueInsets>
+               <effect>
+                  <SepiaTone level="0.0" />
+               </effect>
+            </TableView>
+            <Button fx:id="cancelButton"  onAction="#cancelButtonAction" layoutX="955.0" layoutY="16.0" mnemonicParsing="false" text="나가기" />
+            <Label fx:id="userID" layoutX="815.0" layoutY="14.0" text="*">
+               <font>
+                  <Font name="HYPost-Medium" size="27.0" />
+               </font>
+            </Label>
+            <Pane layoutX="713.0" layoutY="309.0" prefHeight="274.0" prefWidth="356.0" style="-fx-background-color: #FF9999;">
+               <children>
+                  <Label layoutX="29.0" layoutY="61.0" text="책 이름:">
+                     <font>
+                        <Font name="HYPost-Medium" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label1" layoutX="128.0" layoutY="66.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="124.0" text="책 번호:">
+                     <font>
+                        <Font name="HYPost-Medium" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label2" layoutX="128.0" layoutY="123.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label1" layoutX="119.0" layoutY="64.0" text="---">
+                     <font>
+                        <Font size="30.0" />
+                     </font></Label>
+                  <Label fx:id="label2" layoutX="119.0" layoutY="122.0" text="---">
+                     <font>
+                        <Font size="29.0" />
+                     </font></Label>
+                  <DatePicker fx:id="datePicker" layoutX="11.0" layoutY="182.0" onAction="#ttt" prefHeight="41.0" prefWidth="335.0" />
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <Label layoutX="436.0" layoutY="15.0" prefHeight="83.0" prefWidth="191.0" text="도서 대출">
+         <font>
+            <Font name="HYPost-Medium" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="128.0" text="도서 조회">
+         <font>
+            <Font size="31.0" />
+         </font></Label>
+      <Label layoutX="840.0" layoutY="821.0" />
+   </children>
+</Pane>

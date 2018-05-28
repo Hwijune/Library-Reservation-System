@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane fx:id="floor" dividerPositions="0.17558528428093645" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.ChoiceController">
+  <items>
+    <AnchorPane fx:id="fix" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="Lib" alignment="CENTER" depthTest="ENABLE" layoutX="6.0" layoutY="10.0" prefHeight="68.0" prefWidth="324.0" text="000 도서관" textAlignment="CENTER" textFill="BLUE">
+               <font>
+                  <Font name="GyeonggiTitle Bold" size="32.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserName" layoutX="339.0" layoutY="27.0" prefHeight="35.0" prefWidth="172.0" text="사용자:">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="log" layoutX="520.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="35.0" prefWidth="70.0" text="로그아웃">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <SplitPane dividerPositions="0.5016722408026756" prefHeight="400.0" prefWidth="600.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="300.0">
+                     <children>
+                        <Button fx:id="one" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#floor1" prefHeight="350.0" prefWidth="250.0" text="1층" textFill="#11ab19">
+                           <font>
+                              <Font name="GyeonggiTitle Bold" size="50.0" />
+                           </font></Button>
+                        <ProgressBar layoutX="34.0" layoutY="345.0" prefHeight="20.0" prefWidth="230.0" progress="0.0" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="300.0">
+                     <children>
+                        <Button fx:id="two" layoutX="23.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#floor2" prefHeight="350.0" prefWidth="250.0" text="2층" textFill="#11ab19">
+                           <font>
+                              <Font size="50.0" />
+                           </font></Button>
+                        <ProgressBar layoutX="33.0" layoutY="346.0" prefHeight="20.0" prefWidth="230.0" progress="0.0" />
+                     </children></AnchorPane>
+              </items>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </SplitPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></AnchorPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="599.0" prefWidth="744.0" style="-fx-background-color: #FF9999;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="t.rootcontroller2">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="8.0" prefHeight="581.0" prefWidth="734.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="220.0" layoutY="26.0" text="도서 대출 현황">
+               <font>
+                  <Font name="DX퓨리티B" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="userID" layoutX="507.0" layoutY="15.0" prefHeight="16.0" prefWidth="103.0" text="***회원님">
+               <font>
+                  <Font name="DX퓨리티B" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancelButton" onAction="#cancelButtonAction" layoutX="624.0" layoutY="13.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="110.0" text="나가기">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="94.0" fitWidth="92.0" layoutX="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../책.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loanbtn1" layoutX="328.0" layoutY="80.0" text="보기" />
+            <TableView fx:id="tablebook2" layoutX="95.0" layoutY="130.0" prefHeight="443.0" prefWidth="556.0">
+              <columns>
+                <TableColumn fx:id="columnbooknum" prefWidth="141.0" text="책 번호" />
+                <TableColumn fx:id="columnbookname" prefWidth="142.0" text="책 이름" />
+                  <TableColumn fx:id="columnborrowdate" prefWidth="136.0" text="대출일" />
+                  <TableColumn fx:id="columnreturndate" prefWidth="136.0" text="반납일" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

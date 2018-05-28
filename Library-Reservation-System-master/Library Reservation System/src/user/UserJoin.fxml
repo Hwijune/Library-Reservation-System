@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="624.0" prefWidth="291.0" style="-fx-background-color: white; -fx-border-color: #ff9999; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+ fx:controller="user.UserJoinController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="96.0" layoutY="78.0" text="회 원 가 입">
+      <font>
+        <Font name="HYPost-Medium" size="30.0" />
+      </font>
+    </Label>
+    <Label layoutX="24.0" layoutY="142.0" text="아이디(학번)">
+         <font>
+            <Font name="HYPost-Medium" size="15.0" />
+         </font></Label>
+    <Label layoutX="36.0" layoutY="193.0" text="비밀번호">
+         <font>
+            <Font name="HYPost-Medium" size="15.0" />
+         </font></Label>
+    <Label layoutX="16.0" layoutY="249.0" text="비밀번호 확인">
+         <font>
+            <Font name="HYPost-Medium" size="15.0" />
+         </font></Label>
+    <Label layoutX="50.0" layoutY="306.0" text="성별">
+         <font>
+            <Font name="HYPost-Medium" size="15.0" />
+         </font></Label>
+    <Label layoutX="35.0" layoutY="363.0" text="나이 ">
+         <font>
+            <Font name="HYPost-Medium" size="15.0" />
+         </font></Label>
+    <Label layoutX="43.0" layoutY="416.0" text="이메일">
+         <font>
+            <Font name="HYPost-Medium" size="15.0" />
+         </font></Label>
+    <RadioButton fx:id="userGenderMan" layoutX="127.0" layoutY="310.0" mnemonicParsing="false" text="남자">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+    <RadioButton fx:id="userGenderWoman" layoutX="221.0" layoutY="310.0" mnemonicParsing="false" text="여자">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <Label disable="true" layoutX="6.0" layoutY="5.0" prefHeight="53.0" prefWidth="352.0" style="-fx-background-color: pink;" />
+      <Label layoutX="19.0" layoutY="14.0" prefHeight="30.0" prefWidth="150.0" text="도서관 이용 도우미">
+         <font>
+            <Font name="배달의민족 주아" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="joinButton" onAction="#joinButtonAction" layoutX="27.0" layoutY="469.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="304.0" style="-fx-background-color: #ff9999; -fx-background-radius: 100;" text="회원가입">
+         <font>
+            <Font name="HYPost-Medium" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" onAction="#cancelButtonAction" layoutX="27.0" layoutY="543.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="304.0" style="-fx-background-color: #ff9999; -fx-background-radius: 100;" text="취소">
+         <font>
+            <Font name="HYPost-Medium" size="22.0" />
+         </font>
+      </Button>
+      <TextField fx:id="userID" layoutX="117.0" layoutY="133.0" prefHeight="42.0" prefWidth="210.0" promptText="ex)1344029" style="-fx-border-color: lightgray; -fx-border-width: 2; -fx-background-color: #00000060; -fx-text-inner-color: white;">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="userPassword" layoutX="117.0" layoutY="186.0" prefHeight="42.0" prefWidth="210.0" promptText="영문,숫자조합 8자이상" style="-fx-border-color: lightgray; -fx-border-width: 2; -fx-background-color: #00000060; -fx-text-inner-color: white;">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="userPasswordCheck" layoutX="117.0" layoutY="240.0" prefHeight="42.0" prefWidth="210.0" promptText="영문,숫자조합 8자이상" style="-fx-border-color: lightgray; -fx-border-width: 2; -fx-background-color: #00000060; -fx-text-inner-color: white;">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="userAge" layoutX="117.0" layoutY="349.0" prefHeight="42.0" prefWidth="210.0" promptText="ex) 소프트웨어학과" style="-fx-border-color: lightgray; -fx-border-width: 2; -fx-background-color: #00000060; -fx-text-inner-color: white;">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="userEmail" layoutX="117.0" layoutY="405.0" prefHeight="42.0" prefWidth="210.0" promptText="ex) example@example.com" style="-fx-border-color: lightgray; -fx-border-width: 2; -fx-background-color: #00000060; -fx-text-inner-color: white;">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </TextField>
+      <Circle fill="#fa4771" layoutX="336.0" layoutY="29.0" radius="13.0" stroke="#fa4771" strokeType="INSIDE" />
+  </children>
+</AnchorPane>

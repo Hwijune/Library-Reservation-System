@@ -1,0 +1,14 @@
+DROP DATABASE LRS; # 기존에 존재하는 데이터베이스 삭제
+CREATE DATABASE LRS; # 데이터베이스 생성
+USE LRS; # 데이터베이스 접속
+
+CREATE TABLE USER (
+  userID VARCHAR(20) PRIMARY KEY, # 회원 아이디
+  userPassword VARCHAR(64), # 회원 비밀번호
+  userGender VARCHAR(10), # 회원 성별
+  userAge INT, # 회원 나이
+  userEmail VARCHAR(50) # 회원 이메일
+);
+
+/* 회원 덤프 데이터 삽입 */
+INSERT INTO USER VALUES ('john', 'john123', '남자', 20, 'john@gmail.com');

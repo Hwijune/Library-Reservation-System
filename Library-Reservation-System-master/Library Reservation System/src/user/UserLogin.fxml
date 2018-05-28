@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+
+<AnchorPane prefHeight="736.0" prefWidth="1208.0" style="-fx-background-color: #ffffff; -fx-border-color: coral; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.UserLoginController">
+  <children>
+      <ImageView fitHeight="675.0" fitWidth="1195.0" layoutX="7.0" layoutY="60.0" opacity="0.8" pickOnBounds="true" style="-fx-background-radius: pink;">
+         <image>
+            <Image url="img/Login_image.jpg" />
+         </image>
+         <effect>
+            <Glow level="0.24">
+               <input>
+                  <ColorAdjust />
+               </input>
+            </Glow>
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="520.0" layoutX="428.0" layoutY="111.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" width="354.0" />
+      <TextField fx:id="userID" layoutX="500.0" layoutY="321.0" prefHeight="40.0" prefWidth="245.0" promptText="Account" style="-fx-border-color: white; -fx-border-width: 2; -fx-background-color: white; -fx-text-inner-color: black;" />
+      <PasswordField fx:id="userPassword" layoutX="500.0" layoutY="390.0" prefHeight="40.0" prefWidth="245.0" promptText="Password" style="-fx-border-color: white; -fx-border-width: 2; -fx-background-color: white; -fx-text-inner-color: black;" />
+      <Button fx:id="loginButton" layoutX="439.0" layoutY="473.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="39.0" prefWidth="333.0" style="-fx-background-color: pink; -fx-border-radius: 100;" text="Login" textFill="#949292">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="joinButton" layoutX="440.0" layoutY="545.0" mnemonicParsing="false" onAction="#joinButtonAction" prefHeight="40.0" prefWidth="333.0" style="-fx-background-color: pink; -fx-border-radius: 10;" text="Join" textFill="#949292">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label disable="true" layoutX="7.0" layoutY="7.0" prefHeight="53.0" prefWidth="1195.0" style="-fx-background-color: pink;">
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis></Label>
+      <Circle fill="#fa4771" layoutX="1180.0" layoutY="31.0" radius="13.0" stroke="#fa4771" strokeType="INSIDE" />
+      <Label layoutX="31.0" layoutY="17.0" prefHeight="30.0" prefWidth="224.0" text="도서관 이용 도우미">
+         <font>
+            <Font name="배달의민족 주아" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="39.0" layoutX="446.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/guest-male.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="452.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/password.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="526.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/login_logo_main.gif" />
+         </image>
+         <effect>
+            <Lighting diffuseConstant="2.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+  </children>
+</AnchorPane>

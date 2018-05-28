@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="user" prefHeight="475.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.UseController">
+	<!-- TODO Add Nodes -->
+	 <children>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="111.0" prefWidth="400.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="78.0" layoutY="7.0" prefHeight="36.0" prefWidth="254.0" text="좌석배정">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <TextField fx:id="txtf1" layoutY="14.0" prefHeight="23.0" prefWidth="130.0" />
+                        <TextField fx:id="txtf2" layoutX="140.0" layoutY="14.0" prefHeight="23.0" prefWidth="124.0" />
+                        <TextField fx:id="txtf3" layoutX="270.0" layoutY="14.0" prefHeight="23.0" prefWidth="124.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.30808080808080807" layoutY="111.0" prefHeight="292.0" prefWidth="398.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="123.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="9.0" layoutY="14.0" prefHeight="52.0" prefWidth="101.0" text="시작시간" />
+                        <Label alignment="CENTER" layoutX="9.0" layoutY="112.0" prefHeight="52.0" prefWidth="101.0" text="이용시간" />
+                        <Label alignment="CENTER" layoutX="9.0" layoutY="212.0" prefHeight="52.0" prefWidth="101.0" text="종료시간" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="time1" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="52.0" prefWidth="235.0" text="07:35:26">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn1" layoutX="14.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#hour1" prefHeight="30.0" prefWidth="50.0" text="1:00" />
+                        <Button fx:id="btn2" layoutX="80.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#hour2" prefHeight="30.0" prefWidth="50.0" text="2:00" />
+                        <Button fx:id="btn3" layoutX="144.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#hour3" prefHeight="30.0" prefWidth="50.0" text="3:00" />
+                        <Button fx:id="btn4" layoutX="207.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#hour4" prefHeight="30.0" prefWidth="50.0" text="4:00" />
+                        <Label fx:id="time2" alignment="CENTER" layoutX="14.0" layoutY="217.0" prefHeight="52.0" prefWidth="235.0" text="종료시간">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <Button fx:id="btn_confirm" layoutX="20.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#confirm" prefHeight="50.0" prefWidth="155.0" text="확인">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_cancel" layoutX="226.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="50.0" prefWidth="155.0" text="취소">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+</AnchorPane>
